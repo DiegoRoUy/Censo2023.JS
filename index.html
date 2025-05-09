@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="css/planilla.css">
+</head>
+
+<body>
+
+  <div id="contenedor">
+    <div id="cabezal" class="clearfix">
+      <img id="logo" src="https://p1.develotion.com/2023_03/logo.jpg" alt="logo">
+      <ul id="navPrincipal">
+        <li id="btnSeccionInicio" class="btn General Censista">
+          <a>Inicio</a>
+        </li>
+        <li id="btnSeccionLogUsuario" class="btn General">
+          <a>Iniciar Sesion </a>
+        </li>
+        <li id="btnSeccionRegistrarse" class="btn General">
+          <a>Registrarse </a>
+        </li>
+        <li id="btnSeccionInvitados" class="btn General Censista">
+          <a>Formulario Censo</a>
+        </li>
+        <li id="btnSeccionReasignarCenso" class="btn Censista">
+          <a>Reasignar Censista</a>
+        </li>
+        <li id="btnSeccionEstadisticaInvitado" class="btn General">
+          <a>Estadistica</a>
+        </li>
+        <li id="btnSeccionTablaEstadisticas" class="btn Censista">
+          <a>Estadistica</a>
+        </li>
+        <li id="btnSeccionContacto" class="btn General Censista">
+          <a>Contacto</a>
+        </li>
+        <li id="btnSeccionCerrarSesion" class="btn Censista">
+          <a>Cerrar sesion</a>
+        </li>
+
+      </ul>
+      <div id="aux">
+        <span id="SpanCensistaLogueado"></span>
+      </div><!-- FIN AUX -->
+    </div><!-- FIN CABEZAL -->
+    <div id="contenido">
+      <div id="seccionCerrarSesion" class="seccion">
+        <p id="pSesionIniciadaMensaje"></p><br>
+        <input type="button" value="Cerrar Sesion" id="btnCerrarSesion"><br>
+        <p id="pCerrarSesionMensaje"></p>
+      </div>
+
+      <div id="seccionInicio" class="seccion">
+
+        <img src="https://p1.develotion.com/2023_03/foto1.webp">
+
+      </div>
+
+      <div id="seccionLogUsuario" class="seccion">
+        <h1>Inicio de sesion</h1><br>
+        <label for="txtNombreIngresoUsuario">Usuario :</label>
+        <input type="text" id="txtNombreIngresoUsuario" placeholder="Nombre Usuario"><br><br>
+
+        <label for="txtContraseniaIngreso">Contraseña :</label>
+        <input type="password" id="txtContraseniaIngreso" placeholder='*****'><br><br>
+        <input type="button" id="btnIngresoUsuario" value="Ingresar">
+
+        <p id="mensajeIngreso"></p>
+      </div>
+
+      <div id="seccionRegistrarse" class="seccion">
+        <h1>Registro de usuario</h1><br>
+        <label for="txtNombre">Ingrese nombre :</label>
+        <input type="text" id="txtNombre"><br><br>
+
+        <label for="txtNombreUsuario">Ingrese nombre de usuario :</label>
+        <input type="text" id="txtNombreUsuario"><br><br>
+
+        <label for="txtContrasenia">Ingrese contraseña :</label>
+        <input type="password" id="txtContrasenia"><br><br>
+
+        <input type="button" value="Registrarse" id="btnRegistrarse"><br>
+
+        <p id="pMensajeRegistroUsuario"></p>
+      </div>
+
+      <div id="seccionInvitados" class="seccion">
+        <h1>Complete el formulario</h1>
+
+        <label for="txtCedulaCensado">Cedula:</label>
+        <input type="text" id="txtCedulaCensado">
+
+        <p id="pMensajeCedulaCensado"></p>
+        <input type="button" Value="Consultar" id="btnIngresarCI"><br><br>
+
+        <label for="txtNombreCampoCensado">Nombre:</label>
+        <input type="text" id="txtNombreCampoCensado">
+        <br>
+        <br>
+        <label for="txtApellidoCampoCensado">Apellido:</label>
+        <input type="text" id="txtApellidoCampoCensado">
+        <br>
+        <br>
+        <label for="txtEdadCampoCensado">Edad:</label>
+        <input type="text" id="txtEdadCampoCensado">
+        <br>
+        <br>
+
+        <label for="slcDptoResidencia">Departamento de residencia :</label>
+        <select id="slcDptoResidencia">
+          <option value="0">Seleccione...</option>
+          <option value="1">Artigas</option>
+          <option value="2">Canelones</option>
+          <option value="3">Cerro Largo</option>
+          <option value="4">Colonia</option>
+          <option value="5">Durazno</option>
+          <option value="6">Flores</option>
+          <option value="7">Florida</option>
+          <option value="8">Lavalleja</option>
+          <option value="9">Maldonado</option>
+          <option value="10">Montevideo</option>
+          <option value="11">Paysandu</option>
+          <option value="12">Rio Negro</option>
+          <option value="13">Rivera</option>
+          <option value="14">Rocha</option>
+          <option value="15">Salto</option>
+          <option value="16">San Jose</option>
+          <option value="17">Soriano</option>
+          <option value="18">Tacuarembo</option>
+          <option value="19">Treinta y Tres</option>
+        </select>
+        <br>
+        <br>
+
+        <label for="slcOcupacion">Ocupacion :</label>
+        <select id="slcOcupacion">
+          <option value="0">Seleccione..</option>
+          <option value="1">Dependiente</option>
+          <option value="2">Independiente</option>
+          <option value="3">Estudiante</option>
+          <option value="4">No trabaja</option>
+        </select>
+        <br>
+        <br>
+        <input type="button" id="btnIngresarCenso" value="Ingresar censo"> <input type="button" id="btnEliminarCenso"
+          value="Eliminar censo">
+        <br>
+        <p id="pEliminado"></p>
+        <input type="button" id="btnValidarCenso" value="Validar censo">
+
+        <p id="pMensajeFormularioCenso"></p><br><br>
+      </div>
+
+      <div id="seccionTablaEstadisticas" class="seccion">
+
+        <h1>Visualizar información estadística</h1>
+        <!-- Estadistica para Censistas -->
+        <table>
+
+          <thead>
+            <th>Departamento</th>
+            <th>Total Censados</th>
+
+          </thead>
+
+          <tbody id="tblViECensados">
+          </tbody>
+        </table>
+        <br>
+        <br>
+        <table>
+          <tbody id="tblCensadosValidados">
+
+            <label for="slcDptoResEstadistica">Departamento de residencia:</label>
+            <select id="slcDptoResEstadistica">
+              <option value="0">Seleccione...</option>
+              <option value="1">Artigas</option>
+              <option value="2">Canelones</option>
+              <option value="3">Cerro Largo</option>
+              <option value="4">Colonia</option>
+              <option value="5">Durazno</option>
+              <option value="6">Flores</option>
+              <option value="7">Florida</option>
+              <option value="8">Lavalleja</option>
+              <option value="9">Maldonado</option>
+              <option value="10">Montevideo</option>
+              <option value="11">Paysandu</option>
+              <option value="12">Rio Negro</option>
+              <option value="13">Rivera</option>
+              <option value="14">Rocha</option>
+              <option value="15">Salto</option>
+              <option value="16">San Jose</option>
+              <option value="17">Soriano</option>
+              <option value="18">Tacuarembo</option>
+              <option value="19">Treinta y Tres</option>
+            </select><br>
+            <input type="button" id="btnEstMayYMen" value="Mostrar estadisticas">
+            <br>
+            <table>
+              <br>
+              <thead>
+                <th>Departamento</th>
+                <th>Menores de edad</th>
+                <th>Mayores de edad</th>
+              </thead>
+              <tbody id="tblPorcentajes">
+
+
+              </tbody>
+            </table>
+          </tbody>
+        </table>
+        <p id="pPorcentajeMayMen"></p>
+      </div>
+
+      <div id="seccionEstadisticaInvitado" class="seccion">
+        <!-- Estadisticas para Invitados -->
+        <table>
+
+          <thead>
+            <th>Departamento</th>
+            <th>Estudian</th>
+            <th>No trabajan</th>
+            <th>Dependientes o independientes</th>
+            <th>Porcentaje del total de censados</th>
+          </thead>
+
+          <tbody id="tablaEstadisticaInvitados">
+
+          </tbody>
+        </table>
+        <br>
+        <br>
+      </div>
+      <div id="seccionReasignarCenso" class="seccion">
+
+        <h1>Reasignar censista</h1>
+
+        <select id="slcPersona">
+        </select><br><br>
+
+        <select id="slcCensistas">
+        </select><br><br>
+
+        <input type="button" value="Reasignar" id="btnReasignar"><br><br>
+
+        <p id="pMensajeReasignacion"></p>
+
+      </div>
+      <div id="seccionContacto" class="seccion">
+
+        <h1>Contacto</h1>
+        <hr>       
+        <h5>Nombre: Diego Rodriguez</h5>
+        <h5>N° de estudiante: 241397</h5>
+        <h6>Correo Electronico: diegoro110790@gmail.com</h6>
+        <h6>Telefono: 099438747</h6>
+
+      </div>  
+
+
+    </div><!-- FIN CONTENIDO -->
+    <div id="pie">
+      <a href="https://www.ort.edu.uy">Footer</a>
+    </div><!-- FIN PIE -->
+  </div><!-- FIN CONTENEDOR -->
+
+  <script src="js/secciones.js"></script>
+  <script src="js/class.js"></script>
+  <script src="js/codigo.js"></script>
+</body>
+
+</html>
